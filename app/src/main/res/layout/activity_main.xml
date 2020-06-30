@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/txtTotCost"
+        android:layout_width="111dp"
+        android:layout_height="44dp"
+        android:layout_marginEnd="240dp"
+        android:text="Total Cost"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtdays" />
+
+    <TextView
+        android:id="@+id/totCostDisp"
+        android:layout_width="127dp"
+        android:layout_height="47dp"
+        android:ems="10"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtTotCost"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtTotCost" />
+
+    <EditText
+        android:id="@+id/childNo"
+        android:layout_width="71dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="61dp"
+        android:layout_marginEnd="49dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="0"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtChild"
+        app:layout_constraintEnd_toStartOf="@+id/childCost"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/txtChild"
+        app:layout_constraintTop_toTopOf="@+id/txtChild"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wondrela Pack"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+    <TextView
+        android:id="@+id/txtChild"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No of Children"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.102"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtAdult"
+        app:layout_constraintVertical_bias="0.11" />
+
+    <TextView
+        android:id="@+id/txtAdult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No of adults"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.106"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.191" />
+
+    <TextView
+        android:id="@+id/txtdays"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No of Days"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.104"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtChild"
+        app:layout_constraintVertical_bias="0.146" />
+
+
+    <Button
+        android:id="@+id/Submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        app:layout_constraintVertical_bias="0.872" />
+
+    <EditText
+        android:id="@+id/adultNo"
+        android:layout_width="66dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="49dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="0"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtAdult"
+        app:layout_constraintEnd_toStartOf="@+id/adultCost"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/txtAdult"
+        app:layout_constraintTop_toTopOf="@+id/txtAdult"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/txtNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No"
+        app:layout_constraintBottom_toTopOf="@+id/adultNo"
+        app:layout_constraintEnd_toStartOf="@+id/txtCost"
+        app:layout_constraintHorizontal_bias="0.828"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.789" />
+
+    <TextView
+        android:id="@+id/txtCost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cost/person"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/title"
+        app:layout_constraintVertical_bias="0.106" />
+
+    <TextView
+        android:id="@+id/adultCost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="39dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="61dp"
+        android:text="2000"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/childCost"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCost"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/childCost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1500"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/adultCost"
+        app:layout_constraintTop_toBottomOf="@+id/txtCost"
+        app:layout_constraintVertical_bias="0.201" />
+
+    <RadioGroup
+        android:id="@+id/noDays"
+        android:layout_width="197dp"
+        android:layout_height="54dp"
+        android:checkedButton="@id/rdBtn1"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/txtdays"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.742"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txtdays"
+        app:layout_constraintVertical_bias="0.457">
+
+        <RadioButton
+            android:id="@+id/rdBtn1"
+            android:layout_width="64dp"
+            android:layout_height="48dp"
+            android:checked="false"
+            android:text="1" />
+
+        <RadioButton
+            android:id="@+id/rdBtn2"
+            android:layout_width="64dp"
+            android:layout_height="48dp"
+            android:text="2" />
+
+        <RadioButton
+            android:id="@+id/rdBtn3"
+            android:layout_width="64dp"
+            android:layout_height="48dp"
+            android:text="3" />
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/ac"
+        android:layout_width="178dp"
+        android:layout_height="54dp"
+        android:checkedButton="@id/AC"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/Submit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/noDays"
+        app:layout_constraintVertical_bias="0.262">
+
+        <RadioButton
+            android:id="@+id/AC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="AC"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/nonAC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Non-AC"
+            android:textSize="18sp" />
+    </RadioGroup>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
